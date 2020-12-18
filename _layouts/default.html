@@ -13,19 +13,73 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <style>
+        .col-xs-15,
+        .col-sm-15,
+        .col-md-15,
+        .col-lg-15 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .col-xs-15 {
+            width: 20%;
+            float: left;
+        }
+        @media (min-width: 768px) {
+        .col-sm-15 {
+                width: 20%;
+                float: left;
+            }
+        }
+        @media (min-width: 992px) {
+            .col-md-15 {
+                width: 20%;
+                float: left;
+            }
+        }
+        @media (min-width: 1200px) {
+            .col-lg-15 {
+                width: 20%;
+                float: left;
+            }
+        }
+    </style>
+
 {% seo %}
   </head>
 
   <body>
     <div id="container">
       <div class="inner">
-
         <header>
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+          <div class="row">
+            <div class="col-md-15 col-sm-3">
+                <h2>Georgi Tinchev</h2><br />
+                <h2>Oxford Robotics Institute</h2>
+            </div>
+            <div class="col-md-15 col-sm-3">
+                <h2>Shuda Li</h2><br />
+                <h2>XYZ Reality</h2>
+            </div>
+            <div class="col-md-15 col-sm-3">
+                <h2>Kai Han</h2><br />
+                <h2>Visual Geometry Group</h2>
+            </div>
+            <div class="col-md-15 col-sm-3">
+                <h2>David Mitchell</h2><br />
+                <h2>XYZ Reality</h2>
+            </div>
+            <div class="col-md-15 col-sm-3">
+                <h2>Rigas Kouskouridas</h2><br />
+                <h2>XYZ Reality</h2>
+            </div>
+          </div>
           <div class="row">
               <div class="col-md-6 text-center">
-                  <a href="" style="text-align: center;"><img src="https://xyz-r-d.github.io/xrcnet/images/papers.png" class="rounded" alt="paper" style="width:50%; margin-top: 10px; margin-bottom: 10px; width: 50px; height: auto;"></a>
+                  <a href="https://arxiv.org/abs/2012.09842" style="text-align: center;"><img src="https://xyz-r-d.github.io/xrcnet/images/papers.png" class="rounded" alt="paper" style="width:50%; margin-top: 10px; margin-bottom: 10px; width: 50px; height: auto;"></a>
               </div>
               <div class="col-md-6 text-center">
                 <a href="" style="text-align: center;"><img src="https://xyz-r-d.github.io/xrcnet/images/code.png" class="rounded" alt="code" style="width:50%; margin-top: 10px; margin-bottom: 10px; width: 50px; height: auto;"></a>
@@ -33,7 +87,7 @@
           </div>
           <div class="row">
             <div class="col-md-6 text-center">
-                <a href="" style="text-align: center; color: #d5000d; text-decoration: none;font-weight: 400;">Paper</a>
+                <a href="https://arxiv.org/abs/2012.09842" style="text-align: center; color: #d5000d; text-decoration: none;font-weight: 400;">Paper</a>
             </div>
             <div class="col-md-6 text-center">
                 <a href="" style="text-align: center; color: #d5000d; text-decoration: none;font-weight: 400;">Code</a>
