@@ -14,36 +14,9 @@
     <![endif]-->
 
     <style>
-        .col-xs-15,
-        .col-sm-15,
-        .col-md-15,
-        .col-lg-15 {
-            position: relative;
-            min-height: 1px;
-            padding-right: 10px;
-            padding-left: 10px;
-        }
-        .col-xs-15 {
-            width: 20%;
-            float: left;
-        }
-        @media (min-width: 768px) {
-        .col-sm-15 {
-                width: 20%;
-                float: left;
-            }
-        }
-        @media (min-width: 992px) {
-            .col-md-15 {
-                width: 20%;
-                float: left;
-            }
-        }
-        @media (min-width: 1200px) {
-            .col-lg-15 {
-                width: 20%;
-                float: left;
-            }
+        .inner-header {
+            width: 1024px;
+            margin: 0 auto;
         }
     </style>
 
@@ -52,61 +25,50 @@
 
   <body>
     <div id="container">
-    
-    <header>
-        <div class="row">
-            <h1 class="offset-md-3 col-md-9">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-            <div class="offset-md-3 col-md-15 col-sm-3">
-                <h2>Georgi Tinchev</h2>
-            </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
-                <h2>Shuda Li</h2>
-            </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
-                <h2>Kai Han</h2>
-            </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
-                <h2>David Mitchell</h2>
-            </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
-                <h2>Rigas Kouskouridas</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="offset-md-3 col-md-15 col-sm-3">
+      <div class="inner-header">
+        <header>
+          <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+          <div class="row">
+            <div class="col-md-15 col-sm-3">
+                <h2>Georgi Tinchev</h2><br />
                 <h2>Oxford Robotics Institute</h2>
             </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
+            <div class="col-md-15 col-sm-3">
+                <h2>Shuda Li</h2><br />
                 <h2>XYZ Reality</h2>
             </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
+            <div class="col-md-15 col-sm-3">
+                <h2>Kai Han</h2><br />
                 <h2>Visual Geometry Group</h2>
             </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
+            <div class="col-md-15 col-sm-3">
+                <h2>David Mitchell</h2><br />
                 <h2>XYZ Reality</h2>
             </div>
-            <div class="offset-md-3 col-md-15 col-sm-3">
+            <div class="col-md-15 col-sm-3">
+                <h2>Rigas Kouskouridas</h2><br />
                 <h2>XYZ Reality</h2>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <a href="https://arxiv.org/abs/2012.09842" style="text-align: center;"><img src="https://xyz-r-d.github.io/xrcnet/images/papers.png" class="rounded" alt="paper" style="width:50%; margin-top: 10px; margin-bottom: 10px; width: 50px; height: auto;"></a>
-            </div>
-            <div class="col-md-6 text-center">
+          </div>
+          <div class="row">
+              <div class="col-md-6 text-center">
+                  <a href="https://arxiv.org/abs/2012.09842" style="text-align: center;"><img src="https://xyz-r-d.github.io/xrcnet/images/papers.png" class="rounded" alt="paper" style="width:50%; margin-top: 10px; margin-bottom: 10px; width: 50px; height: auto;"></a>
+              </div>
+              <div class="col-md-6 text-center">
                 <a href="" style="text-align: center;"><img src="https://xyz-r-d.github.io/xrcnet/images/code.png" class="rounded" alt="code" style="width:50%; margin-top: 10px; margin-bottom: 10px; width: 50px; height: auto;"></a>
             </div>
-        </div>
-        <div class="row">
+          </div>
+          <div class="row">
             <div class="col-md-6 text-center">
                 <a href="https://arxiv.org/abs/2012.09842" style="text-align: center; color: #d5000d; text-decoration: none;font-weight: 400;">Paper</a>
             </div>
             <div class="col-md-6 text-center">
                 <a href="" style="text-align: center; color: #d5000d; text-decoration: none;font-weight: 400;">Code</a>
-            </div>
+          </div>
         </div>
-    </header>
-    <div class="inner">
+        </header>
+      </div>
+      <div class="inner">
         <section id="downloads" class="clearfix">
           {% if site.show_downloads %}
           <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
