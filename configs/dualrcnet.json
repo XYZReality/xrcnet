@@ -1,0 +1,31 @@
+{
+    "image_size": 400,
+    "im_fe_ratio": 16,
+    "fine_coarse_ratio": 4,
+    "gauss_size": 3,
+    "numKey": 128,
+    "NCNet": {
+        "kernel_sizes": [3, 3],
+        "channels": [16, 1]
+    },
+    "training": {
+        "num_epochs": 15,
+        "num_workers": 4,
+        "batch_size": 16,
+        "use_writer": true,
+        "multi_gpu": true,
+        "fe_finetune_params": 0
+    },
+    "backbone": "resnet101fpn_3_1024_4",
+    "loss": {
+        "weight_loss": [0, 1, 0],
+        "mode": 1,
+        "loss": "meanfnorm",
+        "weight_orthogonal": 0.05
+    },
+    "optimizer": {
+        "lr": 0.01,
+        "use_scheduler": true,
+        "scheduler_milestone": [5, 10, 15]
+    }
+}

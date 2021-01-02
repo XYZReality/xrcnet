@@ -1,0 +1,24 @@
+# parser.add_argument('--image_size', type=int, default=400)
+# parser.add_argument('--num_epochs', type=int, default=15, help='number of training epochs')
+# parser.add_argument('--batch_size', type=int, default=16, help='training batch size')
+# parser.add_argument('--lr', type=float, default=0.001, help='learning rate')
+# parser.add_argument('--ncons_kernel_sizes', nargs='+', type=int, default=[3, 3], help='kernels sizes in neigh. cons.')
+# parser.add_argument('--ncons_channels', nargs='+', type=int, default=[16, 1], help='channels in neigh. cons')
+
+# parser.add_argument('--fe_finetune_params',  type=int, default=0, help='number of layers to finetune')
+# parser.add_argument('--multi_gpu', type=bool, default=True, help='whether to use multi gpu to train the model')
+
+# parser.add_argument('--use_scheduler', type=bool, default=True, help='whether to use optmizer lr scheduler')
+# parser.add_argument('--scheduler_milestone', type=int, nargs='+', default = [5, 10, 15])
+# parser.add_argument('--use_writer', type=bool, default=False, help='whether to use tensorboard to record the loss')
+
+# parser.add_argument('--backbone', type=str, default='resnet101fpn_3_1024_4', help='backbone used to extract feature map')
+# parser.add_argument('--im_fe_ratio', type=int, default=16, help='The ratio between image resolution and coarse level femap')
+# parser.add_argument('--fine_coarse_ratio', type=int, default=4, help='The ratio between fine level femap and coarse level femap')
+
+# parser.add_argument('--weight_loss', nargs='+', type=float, default = [0., 1, 0 ],help='the weight for sparse strong and weak loss ' )
+# parser.add_argument('--mode', type=int, default=1, help='0: 1NN, 1:4NN')
+# parser.add_argument('--loss', type=str, default='orthogonal_meanfnorm',help='specify the type of loss: meanfnorm, orthogonal_meanfnorm, displacement, balanced')
+# parser.add_argument('--gauss_size', type=int, default = 3, help='blur ground truth, it can be 0 3 5 7')
+# parser.add_argument('--weight_orthogonal', type=float, default=0.05,help='the weight for orthogonal term.')
+# parser.add_argument('--numKey', type=int, default=128, help='number of keypoints for each image pair')
