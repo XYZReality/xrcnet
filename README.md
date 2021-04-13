@@ -1,4 +1,4 @@
-# X Resolution Correspodence Networks
+# X Resolution Correspondence Networks
 
 ## Bibtex
 
