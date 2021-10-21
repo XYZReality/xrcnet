@@ -1,5 +1,9 @@
 # X Resolution Correspondence Networks
 
+## Paper
+
+Please checkout our paper and supplementary material [here](https://arxiv.org/abs/2012.09842).
+
 ## Bibtex
 
 If you consider using our code/data please consider citing us as follows:
@@ -8,8 +12,8 @@ If you consider using our code/data please consider citing us as follows:
 @inproceedings{tinchev2020xrcnet, 
     title={{$\mathbb{X}$}Resolution Correspondence Networks}, 
     author={Tinchev, Georgi and Li, Shuda and Han, Kai and Mitchell, David and Kouskouridas, Rigas}, 
-    booktitle={arXiv preprint arXiv:2012.09842},
-    year={2020} 
+    booktitle={Proceedings of British Machine Vision Conference (BMVC)},
+    year={2021} 
 }
 
 ```
